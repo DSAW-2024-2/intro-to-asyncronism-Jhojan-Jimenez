@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  padding: 1rem 0px;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  box-shadow: 0px 0px 1rem rgb(161, 161, 161);
+  justify-content: center;
+}
+#types {
+  display: none;
+}
+#right-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  & input {
+    height: 2rem;
+    border: none;
+  }
+  & button {
+    background-color: white;
+  }
+}
+
+#pokemons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+.pokemon-container {
+  border: 1px solid black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.pokemon-img {
+  height: 5rem;
+  width: auto;
+  margin: 1rem 0px;
+}
+.pokemon-info {
+  & h2 {
+    width: 100%;
+    text-align: center;
+  }
+  & p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.pokemon-abilities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  & .abilitie {
+    background-color: greenyellow;
+    height: auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 720px) {
+  #pokemons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  header {
+    flex: row;
+    width: 100%;
+  }
+  #types {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #search {
+    margin: 1rem;
+  }
+  #pokemons {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3rem;
+    padding: 4rem;
+  }
+  .type-button {
+    min-width: 4rem;
+    background-color: yellow;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .pokemon-abilities {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    & .abilitie {
+      background-color: greenyellow;
+      height: auto;
+      text-align: center;
+      border-radius: 1rem;
+      padding: 0.4rem;
+    }
+  }
+}
