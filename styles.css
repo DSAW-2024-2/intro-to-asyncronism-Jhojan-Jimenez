@@ -122,7 +122,9 @@ header {
     padding: 2rem;
   }
   #Logo {
-    display: none;
+    display: block;
+    height: 3rem;
+    margin: auto 0px;
   }
 }
 
@@ -151,5 +153,8 @@ header {
   .type-button {
     border: none;
     background-color: transparent;
+  }
+  #Logo {
+    display: none;
   }
 }
