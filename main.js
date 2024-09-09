@@ -95,6 +95,7 @@ async function pokemones(indexT, off, limit) {
       button.addEventListener("click", () => {
         const index = typeIndex + 1;
         indexPoke = index;
+        numPoke = 10;
         pokemones(index, 0, 10);
       });
       typesContainer.appendChild(button);
@@ -145,6 +146,6 @@ async function modal(response) {
   backButton.addEventListener("click", () => {
     pokemonDetail.innerHTML = "";
     pokemonDetail.classList.remove("opacity");
-    pokemones(indexPoke, 0, numPoke);
+    pokemones(indexPoke, numPoke-10, numPoke);
   });
 }
