@@ -4,15 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/Pokeball.png"
+      type="image/x-icon"
+    />
     <title>PokeApi</title>
   </head>
   <body>
     <header>
+      <img src="assets/imgs/pokemon_Logo.png" alt="Pokemon-Logo" id="Logo">
       <div id="types"></div>
       <div id="right-filter">
-        <button id="left"><</button>
+        <button id="left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-caret-left-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+            />
+          </svg>
+        </button>
         <input type="text" id="search" placeholder="Pokemon Name" />
-        <button id="right">></button>
+        <button id="right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-caret-right-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <main>
